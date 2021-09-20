@@ -1,15 +1,11 @@
 import turtle
 import random
 
-# window setup
-
 win = turtle.Screen()
 win.setup(width=800,height=600)
 win.bgcolor('black')
 
 colors = ['red','blue','orange','yellow','magenta','purple','peru','ivory','dark orange']
-
-# Turtle objects
 
 moon = turtle.Turtle()
 moon.hideturtle()
@@ -21,8 +17,6 @@ star.hideturtle()
 text = turtle.Turtle()
 text.speed(6)
 text.hideturtle()
-
-# Functions
 
 def draw_moon(pos,color):
 	x,y = pos
@@ -65,8 +59,6 @@ def write_text(color):
 	style = ('Stencil Std Bold',50,'normal')
 	text.write('Good Night',font=style,move=True)
 
-
-# Main program
 
 draw_moon((-300,170),'white')
 draw_moon((-278,183),'black')
